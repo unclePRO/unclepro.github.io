@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUKUNA - King of Curses Card Game Bot</title>
+    <meta name="description" content="Command the power of Jujutsu Kaisen's most feared curse in epic Discord card battles. Collect legendary sorcerers, master domain expansions, and rise through the ranks with Sukuna's divine flames.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fire Particles Background -->
+    <div class="fire-particles" id="fire-particles"></div>
+    
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">
+                    <i class="fas fa-fire flame-icon"></i>
+                    SUKUNA
+                </a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#characters" class="nav__link">Cards</a></li>
+                    <li class="nav__item"><a href="#premium" class="nav__link">Premium</a></li>
+                    <li class="nav__item"><a href="#stats" class="nav__link">Support</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="shrine-bg">
+                <div class="shrine-pillars">
+                    <div class="pillar pillar-left"></div>
+                    <div class="pillar pillar-right"></div>
+                </div>
+                <div class="domain-circle"></div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="sukuna-name">SUKUNA</span>
+                            <span class="flame-accent">🔥</span>
+                        </h1>
+                        <p class="hero__subtitle">King of Curses Card Game Bot</p>
+                        <p class="hero__description">Command the power of Jujutsu Kaisen's most feared curse in epic Discord card battles. Collect legendary sorcerers, master domain expansions, and rise through the ranks with Sukuna's divine flames.</p>
+                        <div class="hero__stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10,000+</span>
+                                <span class="stat-label">Servers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50,000+</span>
+                                <span class="stat-label">Players</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1M+</span>
+                                <span class="stat-label">Cards Collected</span>
+                            </div>
+                        </div>
+                        <div class="hero__cta">
+                            <a id="invite-btn" href="https://discord.com/oauth2/authorize?client_id=123456789012345678&scope=bot%20applications.commands&permissions=8" class="btn btn--flame" target="_blank" rel="noopener">
+                                <i class="fab fa-discord"></i>
+                                INVITE TO DISCORD
+                            </a>
+                            <a id="get-premium-btn" href="#premium" class="btn btn--golden">
+                                <i class="fas fa-crown"></i>
+                                GET PREMIUM
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Divine Techniques</h2>
+                    <p class="section__subtitle">Unleash the power of Sukuna's domain</p>
+                </div>
+                <div class="features__grid">
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3 class="feature-card__title">Malevolent Card Collection</h3>
+                        <p class="feature-card__description">Collect over 100+ Jujutsu Kaisen characters with unique abilities and rarities</p>
+                        <div class="feature-flame"></div>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <h3 class="feature-card__title">Domain Battles</h3>
+                        <p class="feature-card__description">Engage in strategic PvP battles using your favorite JJK characters</p>
+                        <div class="feature-flame"></div>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-sword"></i>
+                        </div>
+                        <h3 class="feature-card__title">Cleave & Dismantle</h3>
+                        <p class="feature-card__description">Master advanced combat mechanics inspired by Sukuna's techniques</p>
+                        <div class="feature-flame"></div>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <h3 class="feature-card__title">Finger Progression</h3>
+                        <p class="feature-card__description">Power up your cards and unlock new abilities as you progress</p>
+                        <div class="feature-flame"></div>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="feature-card__title">Shrine Leaderboards</h3>
+                        <p class="feature-card__description">Compete against other sorcerers for ultimate supremacy</p>
+                        <div class="feature-flame"></div>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="feature-card__title">Cursed Energy Trading</h3>
+                        <p class="feature-card__description">Trade cards with other players to complete your collection</p>
+                        <div class="feature-flame"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section id="characters" class="characters section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Jujutsu Sorcerers & Curses</h2>
+                    <p class="section__subtitle">Command legendary characters from the JJK universe</p>
+                </div>
+                <div class="characters__grid">
+                    <div class="character-card" data-rarity="mythic">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="rarity-badge rarity-mythic">MYTHIC</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Ryomen Sukuna</h3>
+                            <p class="character-card__role">King of Curses</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="mythic">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="rarity-badge rarity-mythic">MYTHIC</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Satoru Gojo</h3>
+                            <p class="character-card__role">The Strongest</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="legendary">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-fist-raised"></i>
+                            </div>
+                            <div class="rarity-badge rarity-legendary">LEGENDARY</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Yuji Itadori</h3>
+                            <p class="character-card__role">Main Protagonist</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="legendary">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-ghost"></i>
+                            </div>
+                            <div class="rarity-badge rarity-legendary">LEGENDARY</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Suguru Geto</h3>
+                            <p class="character-card__role">Curse Manipulator</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="legendary">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="rarity-badge rarity-legendary">LEGENDARY</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Jogo</h3>
+                            <p class="character-card__role">Volcano Curse</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="legendary">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-skull"></i>
+                            </div>
+                            <div class="rarity-badge rarity-legendary">LEGENDARY</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Mahito</h3>
+                            <p class="character-card__role">Soul Manipulator</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="epic">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <div class="rarity-badge rarity-epic">EPIC</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Megumi Fushiguro</h3>
+                            <p class="character-card__role">Ten Shadows User</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                    <div class="character-card" data-rarity="epic">
+                        <div class="character-card__image">
+                            <div class="character-placeholder">
+                                <i class="fas fa-hammer"></i>
+                            </div>
+                            <div class="rarity-badge rarity-epic">EPIC</div>
+                        </div>
+                        <div class="character-card__info">
+                            <h3 class="character-card__name">Nobara Kugisaki</h3>
+                            <p class="character-card__role">Straw Doll Master</p>
+                        </div>
+                        <div class="character-flame-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Section -->
+        <section id="premium" class="premium section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">King of Curses Premium</h2>
+                    <p class="section__subtitle">Unlock the true power of Sukuna's domain</p>
+                </div>
+                <div class="premium__content">
+                    <div class="premium__card">
+                        <div class="premium__header">
+                            <i class="fas fa-crown premium__icon"></i>
+                            <h3 class="premium__title">Premium Benefits</h3>
+                        </div>
+                        <div class="premium__benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check flame-check"></i>
+                                <span>Exclusive Sukuna domain cards</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check flame-check"></i>
+                                <span>Priority matchmaking system</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check flame-check"></i>
+                                <span>Special flame animations</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check flame-check"></i>
+                                <span>Monthly premium card packs</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check flame-check"></i>
+                                <span>Access to tournament modes</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check flame-check"></i>
+                                <span>Custom profile badges</span>
+                            </div>
+                        </div>
+                        <div class="premium__cta">
+                            <button id="upgrade-now-btn" class="btn btn--golden btn--full-width premium-btn">
+                                <i class="fas fa-crown"></i>
+                                UPGRADE NOW
+                            </button>
+                        </div>
+                        <div class="premium-flames"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stats__item">
+                        <div class="stats__icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="stats__number">10,000+</div>
+                        <div class="stats__label">Discord Servers</div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="stats__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stats__number">50,000+</div>
+                        <div class="stats__label">Active Players</div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="stats__icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="stats__number">1M+</div>
+                        <div class="stats__label">Cards Collected</div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="stats__icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <div class="stats__number">500K+</div>
+                        <div class="stats__label">Battles Fought</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <i class="fas fa-fire flame-icon"></i>
+                        SUKUNA
+                    </div>
+                    <p class="footer__description">Command the power of Jujutsu Kaisen's most feared curse in epic Discord card battles.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4 class="footer__title">Bot</h4>
+                        <a href="https://discord.com/oauth2/authorize?client_id=123456789012345678&scope=bot%20applications.commands&permissions=8" target="_blank" class="footer__link">Invite Bot</a>
+                        <a href="#premium" class="footer__link">Premium</a>
+                        <a href="https://discord.gg/sukunabot" target="_blank" class="footer__link">Commands</a>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Support</h4>
+                        <a href="https://discord.gg/sukunabot" target="_blank" class="footer__link">Discord Server</a>
+                        <a href="https://docs.sukunabot.com" target="_blank" class="footer__link">Documentation</a>
+                        <a href="https://github.com/sukuna-bot/issues" target="_blank" class="footer__link">Bug Reports</a>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Legal</h4>
+                        <a href="https://sukunabot.com/privacy" target="_blank" class="footer__link">Privacy Policy</a>
+                        <a href="https://sukunabot.com/terms" target="_blank" class="footer__link">Terms of Service</a>
+                        <a href="https://sukunabot.com/dmca" target="_blank" class="footer__link">DMCA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Sukuna Bot. All rights reserved. Not affiliated with MAPPA or Gege Akutami.</p>
+                <div class="footer__social">
+                    <a href="https://discord.gg/sukunabot" class="social-link" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://twitter.com/sukunabot" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/sukuna-bot" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
