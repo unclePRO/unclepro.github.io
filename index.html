@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unclePRO - Digital Creative & Tech Enthusiast</title>
+    <meta name="description" content="Digital Creative & Tech Enthusiast - Crafting digital experiences with passion and precision">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">unclePRO</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__bg">
+                <div class="geometric-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__greeting">Hello, I'm</span>
+                            <span class="hero__name" id="typing-text">unclePRO</span>
+                        </h1>
+                        <p class="hero__subtitle">Digital Creative & Tech Enthusiast</p>
+                        <p class="hero__description">Crafting digital experiences with passion and precision</p>
+                        <div class="hero__cta">
+                            <a href="#about" class="btn btn--primary">Learn More</a>
+                            <a href="#contact" class="btn btn--outline">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero__avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="section__subtitle">Get to know unclePRO</p>
+                </div>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">Hey there! I'm unclePRO, a digital creative passionate about bringing ideas to life through technology. With a keen eye for design and a love for innovation, I specialize in creating engaging digital experiences that make an impact.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat__number" data-target="50">0</span>
+                                <span class="stat__label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number" data-target="3">0</span>
+                                <span class="stat__label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number" data-target="25">0</span>
+                                <span class="stat__label">Happy Clients</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number" data-target="100">0</span>
+                                <span class="stat__label">Creative Ideas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__skills">
+                        <h3 class="skills__title">Skills & Expertise</h3>
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Web Development</span>
+                                    <span class="skill__percentage">90%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">UI/UX Design</span>
+                                    <span class="skill__percentage">85%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Digital Marketing</span>
+                                    <span class="skill__percentage">80%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Creative Strategy</span>
+                                    <span class="skill__percentage">95%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">What I Do</h2>
+                    <p class="section__subtitle">Services & Expertise</p>
+                </div>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">💻</div>
+                        <h3 class="service-card__title">Web Development</h3>
+                        <p class="service-card__description">Custom websites and applications built with modern technologies</p>
+                        <div class="service-card__overlay">
+                            <a href="#contact" class="btn btn--sm">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🎨</div>
+                        <h3 class="service-card__title">UI/UX Design</h3>
+                        <p class="service-card__description">User-centered design solutions that drive engagement and conversions</p>
+                        <div class="service-card__overlay">
+                            <a href="#contact" class="btn btn--sm">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📊</div>
+                        <h3 class="service-card__title">Digital Strategy</h3>
+                        <p class="service-card__description">Strategic planning for digital transformation and online presence</p>
+                        <div class="service-card__overlay">
+                            <a href="#contact" class="btn btn--sm">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">💡</div>
+                        <h3 class="service-card__title">Creative Consulting</h3>
+                        <p class="service-card__description">Expert guidance on creative projects and brand development</p>
+                        <div class="service-card__overlay">
+                            <a href="#contact" class="btn btn--sm">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Portfolio</h2>
+                    <p class="section__subtitle">Recent Projects</p>
+                </div>
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                </div>
+                <div class="portfolio__grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item__image">
+                            <img src="https://via.placeholder.com/400x300/4f46e5/ffffff?text=E-commerce+Platform" alt="E-commerce Platform">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">E-commerce Platform</h3>
+                            <p class="portfolio-item__description">Modern e-commerce solution with advanced features</p>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <button class="btn btn--sm portfolio-btn" data-project="0">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-item__image">
+                            <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Mobile+App+Design" alt="Mobile App Design">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Mobile App Design</h3>
+                            <p class="portfolio-item__description">Intuitive mobile app interface design</p>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <button class="btn btn--sm portfolio-btn" data-project="1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-item__image">
+                            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=Brand+Identity" alt="Brand Identity">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Brand Identity</h3>
+                            <p class="portfolio-item__description">Complete brand identity design system</p>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <button class="btn btn--sm portfolio-btn" data-project="2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="marketing">
+                        <div class="portfolio-item__image">
+                            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=Digital+Campaign" alt="Digital Campaign">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Digital Campaign</h3>
+                            <p class="portfolio-item__description">Successful digital marketing campaign</p>
+                        </div>
+                        <div class="portfolio-item__overlay">
+                            <button class="btn btn--sm portfolio-btn" data-project="3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__subtitle">Let's work together</p>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <h3>Email Me</h3>
+                            <p>Ready to start a project?</p>
+                            <a href="mailto:hello@unclepro.com">hello@unclepro.com</a>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+                            <h3>Location</h3>
+                            <p>Available worldwide</p>
+                            <span>Remote & On-site</span>
+                        </div>
+                        <div class="social-links">
+                            <h3>Follow Me</h3>
+                            <div class="social-links__list">
+                                <a href="#" class="social-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 unclePRO. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolio-modal">
+        <div class="modal__overlay">
+            <div class="modal__content">
+                <button class="modal__close" id="modal-close">&times;</button>
+                <div class="modal__body">
+                    <img src="" alt="" class="modal__image" id="modal-image">
+                    <div class="modal__text">
+                        <h3 class="modal__title" id="modal-title"></h3>
+                        <p class="modal__description" id="modal-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
