@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unclePRO | Design Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="glitch-text" data-text="unclePRO">unclePRO</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">INITIALIZING NEURAL INTERFACE...</div>
+        </div>
+        <div class="matrix-bg"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="glitch-text" data-text="unclePRO">unclePRO</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="matrix-rain"></div>
+            <div class="geometric-shapes"></div>
+            <canvas id="particle-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title">
+                <h1 class="typewriter" id="main-title"></h1>
+                <div class="title-underline"></div>
+            </div>
+            <p class="hero-subtitle">
+                <span class="highlight">Design Engineering Student</span> | 
+                <span class="highlight">Future Creator</span>
+            </p>
+            <p class="hero-description">Crafting tomorrow's digital experiences through innovative design and cutting-edge technology</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" id="explore-btn">
+                    <span>EXPLORE PORTFOLIO</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn-secondary">
+                    <span>DOWNLOAD CV</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text" data-text="ABOUT.EXE">ABOUT.EXE</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <div class="status-indicator"></div>
+                            <span class="status-text">ONLINE</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="about-title">Digital Architect & Innovation Engineer</h3>
+                            <p class="about-description">
+                                Currently pursuing <span class="highlight">BTech in Design Engineering</span> at 
+                                <span class="highlight">IIITDM Kancheepuram</span>, where I merge creativity with 
+                                technology to build the future of digital experiences.
+                            </p>
+                            <div class="about-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">SPECIALIZATION:</span>
+                                    <span class="detail-value">Design Engineering</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">LOCATION:</span>
+                                    <span class="detail-value">Kancheepuram, India</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">STATUS:</span>
+                                    <span class="detail-value">Available for Collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Design Engineering">
+                            <div class="skill-icon">DE</div>
+                            <span class="skill-name">Design Engineering</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="UI/UX Design">
+                            <div class="skill-icon">UX</div>
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Frontend Development">
+                            <div class="skill-icon">FE</div>
+                            <span class="skill-name">Frontend Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="3D Modeling">
+                            <div class="skill-icon">3D</div>
+                            <span class="skill-name">3D Modeling</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Prototyping">
+                            <div class="skill-icon">PT</div>
+                            <span class="skill-name">Prototyping</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text" data-text="PROJECTS.SYS">PROJECTS.SYS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-project="neural-interface">
+                    <div class="card-header">
+                        <div class="card-status">
+                            <span class="status-dot concept"></span>
+                            <span class="status-text">CONCEPT PHASE</span>
+                        </div>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Neural Interface Prototype</h3>
+                        <p class="project-description">
+                            Conceptual design for a brain-computer interface with futuristic UI elements 
+                            and real-time data visualization. This project explores the intersection of 
+                            human cognition and digital interfaces.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">WebGL</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Neural Networks</span>
+                        </div>
+                        <div class="project-category">UI/UX Design</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-project">
+                            <span>VIEW DETAILS</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </div>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <div class="project-card coming-soon">
+                    <div class="card-content">
+                        <div class="coming-soon-icon">⚡</div>
+                        <h3 class="project-title">More Projects Coming Soon...</h3>
+                        <p class="project-description">
+                            Currently working on revolutionary projects that will reshape 
+                            the future of digital interaction and design innovation.
+                        </p>
+                        <div class="loading-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text" data-text="CONTACT.NET">CONTACT.NET</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">NAME</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">EMAIL</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">MESSAGE</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
+                            <div class="input-glow"></div>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span>SEND MESSAGE</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3 class="info-title">Let's Connect</h3>
+                        <p class="info-description">
+                            Ready to collaborate on the next big thing? 
+                            Drop me a message and let's create something extraordinary together.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" target="_blank">
+                                <span class="social-icon">GitHub</span>
+                                <div class="link-glow"></div>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <span class="social-icon">LinkedIn</span>
+                                <div class="link-glow"></div>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <span class="social-icon">Twitter</span>
+                                <div class="link-glow"></div>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <span class="social-icon">Dribbble</span>
+                                <div class="link-glow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 unclePRO. All rights reserved. | Designed with passion for the future.</p>
+                <p class="footer-tech">Built with HTML5, CSS3, JavaScript & Future Vision</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
